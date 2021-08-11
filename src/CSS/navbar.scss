@@ -44,6 +44,7 @@ color: whitesmoke;
 li a:hover{
   background-color: brown;
 }
+
 @media (max-width:700px) {
   .navbar h1{
     display: flex;
@@ -52,16 +53,16 @@ li a:hover{
   
   h1 #nav-icon1{
     margin-top: -3px;
-    margin-left:7rem;
     width: 60px;
     height: 50px;
+    margin-left: 7rem;
   }
   h1{
   z-index: 1;
   }
   .navbar{
     grid-template-columns: 1fr;
-    width: 100%;
+    width: fit-content;
   }
   .navbar >ul{
     grid-template-columns:1fr ;
@@ -81,17 +82,22 @@ li a:hover{
   ul>li{
     align-self: center;
     border-bottom: 1px solid gray;
-    width: 103%;
+    width: 90%;
     padding-bottom: 1.5em;
-    padding-left: 4.5rem;
+    padding-left: 2rem;
+  }
+  ul li a{
+    color: black;
   }
   ul >li a:hover{
     background-color: blue;
   }
   .navigation-close{
-    left: -100%;
+    transition: 1s;
+    left: -50rem;
   }
 .navigation-open{
-  left: 0%;
+  left: -7rem;
+
 }
 }

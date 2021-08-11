@@ -6,21 +6,25 @@ const Navbar=()=>{
     return(
     
         <div class="navbar">
-  <h1>LOGO<div id="nav-icon1" onClick={()=>{
+  <h1 id='heading-1'>LOGO<div id="nav-icon1" onClick={()=>{
     let element=document.getElementById("nav-icon1")
     let navs=document.getElementById("navs")
-    let hero=document.getElementById("hero")
+    let heading=document.getElementById("heading-1")
+   
+    // let hero=document.getElementById("hero")
     
     if(element.className==="nav-icon1"){
       element.className='nav-icon1 open'
       navs.className="navigation-open"
-      hero.style.opacity=0
+      heading.style.color='black'
+      // element.style.background='black'
       
     }
     else{
       element.className='nav-icon1'
       navs.className='navigation-close'
-      hero.style.opacity=1
+      heading.style.color='white'
+      // element.style.background='white'
     }
   }}>
   <span></span>
