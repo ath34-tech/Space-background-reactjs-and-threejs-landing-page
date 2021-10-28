@@ -1,5 +1,5 @@
 
-# 3D portfolio website
+# 3D Space background landing page
 
 A simple portfolio website i made using ReactJS,threeJS and threejs-fiber.
 
